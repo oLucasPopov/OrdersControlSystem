@@ -1,0 +1,38 @@
+object frmTemplate: TfrmTemplate
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 467
+  ClientWidth = 729
+  Position = OwnerFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object pnlButtonsContainer: TPanel
+    Align = Right
+    Position.X = 604.000000000000000000
+    Size.Width = 125.000000000000000000
+    Size.Height = 467.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object btnGravar: TButton
+      Position.X = 7.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Gravar'
+      OnClick = btnGravarClick
+    end
+  end
+  object pnlFormContainer: TPanel
+    Align = Client
+    Size.Width = 604.000000000000000000
+    Size.Height = 467.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+end

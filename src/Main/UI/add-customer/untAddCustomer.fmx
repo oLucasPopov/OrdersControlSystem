@@ -1,0 +1,148 @@
+inherited frmAddCustomer: TfrmAddCustomer
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Cadastro de Clientes'
+  DesignerMasterStyle = 0
+  inherited pnlButtonsContainer: TPanel
+    TabOrder = 0
+  end
+  inherited pnlFormContainer: TPanel
+    TabOrder = 3
+    object edtCompanyName: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      StyleLookup = 'edtCompanyNameStyle1'
+      TabOrder = 0
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 585.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object gbContatos: TGroupBox
+      Position.X = 8.000000000000000000
+      Position.Y = 88.000000000000000000
+      Size.Width = 585.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Contatos'
+      TabOrder = 4
+      object lblCelular: TLabel
+        Position.X = 112.000000000000000000
+        Position.Y = 19.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Celular'
+        TabOrder = 5
+      end
+      object edtCellphone: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Position.X = 112.000000000000000000
+        Position.Y = 38.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object edtTelephone: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Position.X = 8.000000000000000000
+        Position.Y = 38.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblTelefone: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 19.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Telefone'
+        TabOrder = 4
+      end
+      object edtEmail: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Position.X = 216.000000000000000000
+        Position.Y = 38.000000000000000000
+        Size.Width = 361.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblEmail: TLabel
+        Position.X = 216.000000000000000000
+        Position.Y = 19.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'E-mail'
+        TabOrder = 3
+      end
+    end
+    object edtTradingName: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Position.X = 8.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 441.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object edtCPF_CNPJ: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 456.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object gbObs: TGroupBox
+      Position.X = 8.000000000000000000
+      Position.Y = 304.000000000000000000
+      Size.Width = 585.000000000000000000
+      Size.Height = 145.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Observa'#231#245'es'
+      TabOrder = 5
+      object edtObs: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Position.X = 8.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 569.000000000000000000
+        Size.Height = 121.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 36
+        Viewport.Width = 569.000000000000000000
+        Viewport.Height = 121.000000000000000000
+      end
+    end
+    object lblCompanyName: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 5.000000000000000000
+      Text = 'Raz'#227'o Social'
+      TabOrder = 3
+    end
+    inline AddressFrame: TAddressFrame
+      Position.X = 8.000000000000000000
+      Position.Y = 160.000000000000000000
+      Size.Width = 585.000000000000000000
+      Size.Height = 145.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object lblTradingName: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 48.000000000000000000
+    Text = 'Nome Fantasia'
+    TabOrder = 2
+  end
+  object lblCPF_CNPJ: TLabel
+    Position.X = 456.000000000000000000
+    Position.Y = 48.000000000000000000
+    Text = 'CPF/CNPJ'
+    TabOrder = 1
+  end
+end

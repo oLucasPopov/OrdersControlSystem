@@ -1,0 +1,156 @@
+object AddressFrame: TAddressFrame
+  Size.Width = 585.000000000000000000
+  Size.Height = 145.000000000000000000
+  Size.PlatformDefault = False
+  object gbEndereco: TGroupBox
+    Size.Width = 585.000000000000000000
+    Size.Height = 145.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Endere'#231'o'
+    TabOrder = 5
+    object lblRua: TLabel
+      Position.X = 168.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Rua'
+      TabOrder = 13
+    end
+    object edtStreetName: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Position.X = 168.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnTyping = edtStreetNameTyping
+    end
+    object edtStreetNumber: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 496.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnTyping = edtStreetNumberTyping
+    end
+    object lblNumero: TLabel
+      Position.X = 496.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'N'#250'mero'
+      TabOrder = 8
+    end
+    object edtNeighbourhood: TComboEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      ItemHeight = 19.000000000000000000
+      ItemIndex = -1
+      Position.X = 8.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnChange = edtNeighbourhoodChange
+    end
+    object lblBairro: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Bairro'
+      TabOrder = 11
+    end
+    object lblCidade: TLabel
+      Position.X = 296.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Cidade'
+      TabOrder = 10
+    end
+    object edtReference: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      Position.X = 8.000000000000000000
+      Position.Y = 112.000000000000000000
+      Size.Width = 481.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnTyping = edtReferenceTyping
+    end
+    object lblEstado: TLabel
+      Position.X = 168.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Estado'
+      TabOrder = 7
+    end
+    object lblReferencia: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 96.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Refer'#234'ncia'
+      TabOrder = 9
+    end
+    object cmbState: TComboBox
+      ItemWidth = 150.000000000000000000
+      Position.X = 168.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 121.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      OnChange = cmbStateChange
+    end
+    object cmbCity: TComboBox
+      Position.X = 296.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      OnChange = cmbCityChange
+    end
+    object edtCEP: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      KeyboardType = NumberPad
+      MaxLength = 10
+      Position.X = 8.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnTyping = edtCEPTyping
+      object btnClearCEP: TClearEditButton
+        CanFocus = False
+        Cursor = crArrow
+        Size.Width = 20.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+    object lblCEP: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'CEP'
+      TabOrder = 12
+    end
+  end
+end

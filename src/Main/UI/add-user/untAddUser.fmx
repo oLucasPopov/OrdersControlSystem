@@ -1,0 +1,84 @@
+inherited frmAddUser: TfrmAddUser
+  Caption = 'Cadastro de Usu'#225'rios'
+  DesignerMasterStyle = 0
+  inherited pnlFormContainer: TPanel
+    object edtUserName: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 233.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object edtPassword: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Password = True
+      Position.X = 248.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 169.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object edtRepeatPassword: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Password = True
+      Position.X = 424.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 169.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblUserName: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'Nome de Usu'#225'rio'
+      TabOrder = 5
+    end
+    object lblPassword: TLabel
+      Position.X = 248.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Senha'
+      TabOrder = 6
+    end
+    object lblRepeatPassword: TLabel
+      Position.X = 424.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'Repetir Senha'
+      TabOrder = 7
+    end
+    object cmbEmployee: TComboBox
+      Position.X = 8.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 233.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+    end
+    object lblFuncionario: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 48.000000000000000000
+      Text = 'Funcion'#225'rio'
+      TabOrder = 8
+    end
+    object cmbUserGroup: TComboBox
+      Position.X = 248.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 169.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+    end
+  end
+  object lblUserGroup: TLabel
+    Position.X = 248.000000000000000000
+    Position.Y = 48.000000000000000000
+    Text = 'Grupo do Usu'#225'rio'
+    TabOrder = 5
+  end
+end

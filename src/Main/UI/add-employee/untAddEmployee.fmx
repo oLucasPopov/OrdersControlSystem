@@ -1,0 +1,201 @@
+inherited frmAddEmployee: TfrmAddEmployee
+  Caption = 'frmTemplate1'
+  DesignerMasterStyle = 0
+  inherited pnlFormContainer: TPanel
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 585.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lblEmployeeName: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'Nome do Funcion'#225'rio'
+      TabOrder = 1
+    end
+    object gbContatos: TGroupBox
+      Position.X = 8.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 585.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Contatos'
+      TabOrder = 2
+      object lblCelular: TLabel
+        Position.X = 112.000000000000000000
+        Position.Y = 19.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Celular'
+        TabOrder = 5
+      end
+      object edtCellphone: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Position.X = 112.000000000000000000
+        Position.Y = 38.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object edtTelephone: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Position.X = 8.000000000000000000
+        Position.Y = 38.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblTelefone: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 19.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Telefone'
+        TabOrder = 4
+      end
+      object edtEmail: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Position.X = 216.000000000000000000
+        Position.Y = 38.000000000000000000
+        Size.Width = 361.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblEmail: TLabel
+        Position.X = 216.000000000000000000
+        Position.Y = 19.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'E-mail'
+        TabOrder = 3
+      end
+    end
+    object gbEndereco: TGroupBox
+      Position.X = 8.000000000000000000
+      Position.Y = 128.000000000000000000
+      Size.Width = 585.000000000000000000
+      Size.Height = 145.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Endere'#231'o'
+      TabOrder = 3
+      object lblRua: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Rua'
+        TabOrder = 10
+      end
+      object edtStreetName: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Position.X = 8.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 481.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object edtStreetNumber: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Position.X = 496.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 81.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblNumero: TLabel
+        Position.X = 496.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'N'#250'mero'
+        TabOrder = 6
+      end
+      object edtNeighbourhood: TComboEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        ItemHeight = 19.000000000000000000
+        ItemIndex = -1
+        Position.X = 8.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblBairro: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Bairro'
+        TabOrder = 9
+      end
+      object lblCidade: TLabel
+        Position.X = 296.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Cidade'
+        TabOrder = 8
+      end
+      object edtReference: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 11
+        Position.X = 8.000000000000000000
+        Position.Y = 112.000000000000000000
+        Size.Width = 481.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblEstado: TLabel
+        Position.X = 168.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Estado'
+        TabOrder = 5
+      end
+      object lblReferencia: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 96.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Refer'#234'ncia'
+        TabOrder = 7
+      end
+      object cmbState: TComboBox
+        Position.X = 168.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+      end
+      object cmbCity: TComboBox
+        Position.X = 296.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 193.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+      end
+    end
+  end
+end

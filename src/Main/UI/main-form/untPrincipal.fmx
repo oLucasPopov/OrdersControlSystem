@@ -1,0 +1,79 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'In'#237'cio'
+  ClientHeight = 460
+  ClientWidth = 912
+  Position = DesktopCenter
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object pnlShortcuts: TPanel
+    Align = Top
+    Size.Width = 912.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object flShortcuts: TFlowLayout
+      Align = Client
+      Size.Width = 912.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Justify = Left
+      JustifyLastLine = Left
+      FlowDirection = LeftToRight
+    end
+  end
+  object pnlContent: TPanel
+    Align = Client
+    Size.Width = 912.000000000000000000
+    Size.Height = 403.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object menu: TMainMenu
+    Left = 40
+    Top = 177
+    object miCadastros: TMenuItem
+      Text = 'Cadastros'
+      object miClientes: TMenuItem
+        Locked = True
+        Text = 'Clientes'
+        OnClick = miClientesClick
+      end
+      object miFornecedores: TMenuItem
+        Locked = True
+        Text = 'Fornecedor'
+      end
+      object miUsuarios: TMenuItem
+        Locked = True
+        Text = 'Usu'#225'rios'
+        OnClick = miUsuariosClick
+      end
+      object miFuncionario: TMenuItem
+        Locked = True
+        Text = 'Funcion'#225'rio'
+      end
+      object MenuItem5: TMenuItem
+        Locked = True
+        Text = '-'
+      end
+      object miCoberturas: TMenuItem
+        Locked = True
+        Text = 'Coberturas'
+      end
+      object miMassas: TMenuItem
+        Locked = True
+        Text = 'Massas'
+      end
+      object miRecheios: TMenuItem
+        Locked = True
+        Text = 'Recheios'
+      end
+    end
+  end
+end
