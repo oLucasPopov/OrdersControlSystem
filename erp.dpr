@@ -24,7 +24,8 @@ uses
   untDbGetStateList in 'src\Data\UseCases\untDbGetStateList.pas',
   untGetStateListRepository in 'src\Data\Protocols\db\State\untGetStateListRepository.pas',
   untStatePostgresRepository in 'src\Infra\db\postgres\state\untStatePostgresRepository.pas',
-  untGetStateListFactory in 'src\Main\Factories\get-state-list\untGetStateListFactory.pas';
+  untGetStateListFactory in 'src\Main\Factories\get-state-list\untGetStateListFactory.pas',
+  untAddressHelpers in 'src\Main\Helpers\untAddressHelpers.pas';
 
 {$R *.res}
 

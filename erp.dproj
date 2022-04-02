@@ -180,6 +180,7 @@
         <DCCReference Include="src\Data\Protocols\db\State\untGetStateListRepository.pas"/>
         <DCCReference Include="src\Infra\db\postgres\state\untStatePostgresRepository.pas"/>
         <DCCReference Include="src\Main\Factories\get-state-list\untGetStateListFactory.pas"/>
+        <DCCReference Include="src\Main\Helpers\untAddressHelpers.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
