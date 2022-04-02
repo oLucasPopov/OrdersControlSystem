@@ -1,16 +1,10 @@
 unit untAddCustomerUC;
 
 interface
-uses untCustomerModel;
+uses untCustomerModel, System.Generics.Collections;
 
 type
-  TAddCustomerModel = class
-    companyName: String;
-    tradingName: String;
-    cpf_cnpj: String;
-    phone: String;
-    cellphone: String;
-    email: String;
+  TAddCustomerAddressModel = class
     cep: String;
     address: String;
     streetName: String;
@@ -19,6 +13,16 @@ type
     state: Integer;
     city: Integer;
     reference: String;
+  end;
+
+  TAddCustomerModel = class
+    companyName: String;
+    tradingName: String;
+    cpf_cnpj: String;
+    phone: String;
+    cellphone: String;
+    email: String;
+    address: TList<TAddCustomerAddressModel>;
     obs: String;
   end;
 

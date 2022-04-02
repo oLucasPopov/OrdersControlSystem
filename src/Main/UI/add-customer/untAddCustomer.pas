@@ -32,7 +32,6 @@ type
     gbObs: TGroupBox;
     edtObs: TMemo;
     AddressFrame: TAddressFrame;
-    procedure FormCreate(Sender: TObject);
   private
     procedure insert; overload;
     procedure update; overload;
@@ -50,6 +49,9 @@ uses untStateModel, untGetStateListFactory;
 {$R *.fmx}
 
 function TfrmAddCustomer.FillCustomerModel: TAddCustomerModel;
+var
+  addresses: TList<TAddCustomerAddressModel>;
+  address: TAddCustomerAddressModel;
 begin
   Result             := TAddCustomerModel.Create;
   Result.companyName := edtCompanyName.Text;
@@ -60,20 +62,22 @@ begin
   Result.cellphone   := edtCellphone.Text;
   Result.email       := edtEmail.Text;
 
-  Result.cep           := AddressFrame.CEP;
-  Result.streetName    := AddressFrame.StreetName;
-  Result.neighbourhood := AddressFrame.Neighbourhood;
-  Result.state         := AddressFrame.StateID;
-  Result.city          := AddressFrame.CityID;
-  Result.Reference     := AddressFrame.Reference;
+
+  addresses := TList<TAddCustomerAddressModel>.Create;
+  if(AddressFrame.AddressIsFilled)then
+  begin
+    address := TAddCustomerAddressModel.Create;
+    address.cep           := AddressFrame.CEP;
+    address.streetName    := AddressFrame.StreetName;
+    address.neighbourhood := AddressFrame.Neighbourhood;
+    address.state         := AddressFrame.StateID;
+    address.city          := AddressFrame.CityID;
+    address.Reference     := AddressFrame.Reference;
+    addresses.Add(address);
+  end;
+  Result.address := addresses;
 
   Result.obs         := edtObs.Text;
-end;
-
-procedure TfrmAddCustomer.FormCreate(Sender: TObject);
-begin
-  inherited;
-  TAddressHelpers.FeedComboBoxWithStateList(AddressFrame.cmbState);
 end;
 
 procedure TfrmAddCustomer.insert;

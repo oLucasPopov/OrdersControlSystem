@@ -115,8 +115,8 @@ inherited frmAddCustomer: TfrmAddCustomer
         Size.Height = 121.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 36
-        Viewport.Width = 569.000000000000000000
-        Viewport.Height = 121.000000000000000000
+        Viewport.Width = 565.000000000000000000
+        Viewport.Height = 117.000000000000000000
       end
     end
     object lblCompanyName: TLabel
