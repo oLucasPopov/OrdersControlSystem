@@ -9,7 +9,7 @@ TGetStateListController = class
     getStateList: GetStateList;
   public
     constructor Create(getStateList: GetStateList);
-    function handle: TList<TStateModel>;
+    function list: TList<TStateModel>;
 end;
 
 implementation
@@ -21,7 +21,7 @@ begin
   Self.getStateList := getStateList;
 end;
 
-function TGetStateListController.handle: TList<TStateModel>;
+function TGetStateListController.list: TList<TStateModel>;
 begin
   Result := Self.getStateList.get;
 end;
