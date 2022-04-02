@@ -113,6 +113,7 @@ object AddressFrame: TAddressFrame
       Size.PlatformDefault = False
       TabOrder = 4
       OnChange = cmbStateChange
+      OnEnter = cmbStateEnter
     end
     object cmbCity: TComboBox
       Position.X = 296.000000000000000000
