@@ -3,9 +3,9 @@ unit untAddressFrame;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
-  FMX.Edit, FMX.ListBox, FMX.ComboEdit, FMX.Controls.Presentation;
+  FMX.Edit, FMX.ListBox, FMX.ComboEdit, FMX.Controls.Presentation, System.Generics.Collections;
 
 type
   TAddressFrame = class(TFrame)
@@ -40,7 +40,6 @@ type
     FStateID: Integer;
     FCityID: Integer;
     FReference: String;
-    procedure LoadCitiesList;
   public
     property CEP: String read FCEP write FCEP;
     property StreetName: String read FStreetName write FStreetName;
@@ -61,8 +60,6 @@ begin
     StateID := Integer(cmbState.Items.Objects[cmbState.ItemIndex])
   else
     StateID := 0;
-
-  LoadCitiesList;
 end;
 
 procedure TAddressFrame.cmbCityChange(Sender: TObject);
@@ -110,12 +107,5 @@ begin
   StreetNumber := edtStreetNumber.Text;
 end;
 
-procedure TAddressFrame.LoadCitiesList;
-begin
-  //load cities
-
-//  if(CityID <> 0)then
-//    select city
-end;
 
 end.
