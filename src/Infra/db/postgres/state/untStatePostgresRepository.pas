@@ -27,8 +27,9 @@ begin
     while not qryGetState.EoF do
     begin
       var stateModel: TStateModel := TStateModel.Create;
-      stateModel.id    := qryGetState.FieldByName('id').AsInteger;
-      stateModel.state := qryGetState.FieldByName('estado').AsString;
+      stateModel.id     := qryGetState.FieldByName('id').AsInteger;
+      stateModel.state  := qryGetState.FieldByName('estado').AsString;
+      stateModel.idIBGE := qryGetState.FieldByName('id_ibge').AsInteger;
 
       stateList.Add(stateModel);
       qryGetState.Next;
