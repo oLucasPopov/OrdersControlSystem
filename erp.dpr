@@ -25,7 +25,14 @@ uses
   untGetStateListRepository in 'src\Data\Protocols\db\State\untGetStateListRepository.pas',
   untStatePostgresRepository in 'src\Infra\db\postgres\state\untStatePostgresRepository.pas',
   untGetStateListFactory in 'src\Main\Factories\get-state-list\untGetStateListFactory.pas',
-  untAddressHelpers in 'src\Main\Helpers\untAddressHelpers.pas';
+  untAddressHelpers in 'src\Main\Helpers\untAddressHelpers.pas',
+  untGetCityListFromStateController in 'src\Presentation\Controllers\untGetCityListFromStateController.pas',
+  untCityModel in 'src\Domain\Models\untCityModel.pas',
+  untGetCityListFromStateUC in 'src\Domain\UseCases\untGetCityListFromStateUC.pas',
+  untDbGetCityListFromState in 'src\Data\UseCases\untDbGetCityListFromState.pas',
+  untGetCityListFromStateRepository in 'src\Data\Protocols\db\City\untGetCityListFromStateRepository.pas',
+  untCityPostgresRepository in 'src\Infra\db\postgres\city\untCityPostgresRepository.pas',
+  untGetCityListByStateFactory in 'src\Main\Factories\get-city-list-by-state\untGetCityListByStateFactory.pas';
 
 {$R *.res}
 

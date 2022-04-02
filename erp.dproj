@@ -181,6 +181,13 @@
         <DCCReference Include="src\Infra\db\postgres\state\untStatePostgresRepository.pas"/>
         <DCCReference Include="src\Main\Factories\get-state-list\untGetStateListFactory.pas"/>
         <DCCReference Include="src\Main\Helpers\untAddressHelpers.pas"/>
+        <DCCReference Include="src\Presentation\Controllers\untGetCityListFromStateController.pas"/>
+        <DCCReference Include="src\Domain\Models\untCityModel.pas"/>
+        <DCCReference Include="src\Domain\UseCases\untGetCityListFromStateUC.pas"/>
+        <DCCReference Include="src\Data\UseCases\untDbGetCityListFromState.pas"/>
+        <DCCReference Include="src\Data\Protocols\db\City\untGetCityListFromStateRepository.pas"/>
+        <DCCReference Include="src\Infra\db\postgres\city\untCityPostgresRepository.pas"/>
+        <DCCReference Include="src\Main\Factories\get-city-list-by-state\untGetCityListByStateFactory.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
