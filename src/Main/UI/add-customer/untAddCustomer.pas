@@ -11,7 +11,8 @@ uses
   FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
   FireDAC.Stan.Async, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
   FireDAC.Comp.Client, untAddCustomerController, untAddCustomerFactory,
-  untAddCustomerUC, untAddressFrame, untGetStateListController, System.Generics.Collections;
+  untAddCustomerUC, untAddressFrame, untGetStateListController,
+  System.Generics.Collections, untAddressHelpers;
 
 type
   TfrmAddCustomer = class(TfrmTemplate)
@@ -36,7 +37,6 @@ type
     procedure insert; overload;
     procedure update; overload;
     function FillCustomerModel: TAddCustomerModel;
-    procedure FeedComboBoxWithStateList;
   public
   end;
 
@@ -70,26 +70,10 @@ begin
   Result.obs         := edtObs.Text;
 end;
 
-procedure TfrmAddCustomer.FeedComboBoxWithStateList;
-var
-  getStateList: TGetStateListController;
-  stateModelList: TList<TStateModel>;
-  stateModel: TStateModel;
-begin
-  getStateList   := TGetStateListFactory.Make;
-  stateModelList := getStateList.handle;
-
-  for stateModel in stateModelList do
-    AddressFrame.cmbState.Items.AddObject(stateModel.state
-                                         ,TObject(stateModel.id));
-
-  AddressFrame.cmbState.ItemIndex := AddressFrame.cmbState.Items.IndexOfObject(TObject(20));
-end;
-
 procedure TfrmAddCustomer.FormCreate(Sender: TObject);
 begin
   inherited;
-  FeedComboBoxWithStateList;
+  TAddressHelpers.FeedComboBoxWithStateList(AddressFrame.cmbState);
 end;
 
 procedure TfrmAddCustomer.insert;
